@@ -74,10 +74,90 @@
  display:grid;
  grid-template-columns: 1fr 1fr 1fr;
  gap: 40px;
+ color: white;
 }
 
 .grid-item{
- background-color: black;
- width: 200px;
- height: 200px;
+ background-color: white;
+ width: 300px;
+ height: 350px;
+ box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.firstHalf{
+ height: 210px;
+ width: auto;
+ background-color: lightgray;
+ text-align: center;
+ font-family: 'Roboto';
+ font-size: 30px;
+}
+
+.secondHalf{
+ color:black;
+ font-family: 'Roboto';
+ display: flex;
+ flex-direction: column;
+ gap: 12px;
+ margin: 10px;
+}
+.grid-item-row{
+ display: flex;
+ justify-content: space-between;
+ font-family: bold;
+ font-size: 1.2em;
+}
+
+.grid-items-svg{
+  display: flex;
+  gap: 15px;
+}
+
+#section2Head{
+  font-family: 'roboto';
+  font-weight: bold;
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+.section3 {
+  display: flex;
+  background-color: #F75C7B;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  gap: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.left-half {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 30px;
+  font-size: 1.4em;
+}
+
+#left-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+}
+
+.logos-footer{
+  display: flex;
+  gap: 30px;
+  width: 40px
+}
+
+.left-half-2nd{
+  display: flex;
+  flex-direction: column;
+}
+
+.phone ,.mail{
+  display: flex;
+  gap: 10px;
 }
