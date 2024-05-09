@@ -1,54 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
 *{
- padding: 0;
  margin: 0;
+ padding: 0;
 }
 
 .container{
  display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 100px;
+}
+#nightbringer{
+ width: auto;
+ height: 350px;
+ box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
-.projects{
- background-color: #222629;
- width: 20vw;
- height: 100vh;
+#nightbringer-text{
+ position: absolute;
+ color: white;
+}
+.section1{
+ background-color: #F75C7B;
+ transform: skewY(-0.2rad); 
+ height: 300px;
+ display: flex;
+ justify-content: center;
+ width: 100%;
 }
 
-.inbox{
- background-color: #bfbfbf;
- width: 80vw;
- height: 100vh;
+.test{
+ display: flex;
+ position: absolute;
+ justify-content: center;
+ align-items: center;
+ transform: skewY(0.2rad);
+ padding-top: 30px;
+}
+
+.section1-container{
+ background-color: white;
+ width: 500px;
+ height: auto;
+ padding: 50px; /* fix later */
  display: flex;
  flex-direction: column;
- align-items: center;
  gap: 20px;
+ box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
-#inbox-header{
- padding-top: 50px;
- font-family:Helvetica, sans-serif;
+#section1-header{
+ font-family: 'Roboto';
+ font-weight: bold;
  font-size: 1.5em;
 }
-
-.inbox-container{
- background-color: #222629;
- width: 1000px;
- height: 700px;
- border-radius: 25px;
+#section1-para{
+ font-family: 'Roboto';
+ color: #3b3b3b;
 }
 
-.todoContainer{
- background-color: white;
- width: auto;
- height: 70px;
+.logos{
+ width: 25px;
  display: flex;
  gap: 10px;
 }
 
-#showCreateTodo{
- width: 100px;
+.section2{
+  padding-top: 100px;
+}
+.section2-grid-container{
+ display:grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ gap: 40px;
 }
 
-#checkerBtn{
- width: 50px;
- height: 50px;
+.grid-item{
+ background-color: black;
+ width: 200px;
+ height: 200px;
 }
